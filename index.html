@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Canada - Watch TV Shows Online, Watch Movies Online</title>
+
+    <!-- responsive.css overwrites styles.css because it comes after -->
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css"> 
+
+    <link rel="icon" href="assets/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    
+
+    <!-- Banner -->
+    <div class="banner-wrap">
+        <div class="nav-bar">
+            <div class="logo">
+                <!-- it's good practice to put images inside div elements -->
+                <img src="./assets/logo.png" alt="Netflix cover image">
+            </div>
+            <a class="btn" href="https://www.netflix.com/ke-en/login" target="_blank">Sign In</a>
+        </div>
+        <div class="banner-container">
+            <h1>Unlimited movies, TV<br>shows, and more.</h1>
+            <h2>Watch anywhere. Cancel anytime.</h2>
+            <div class="get-started">
+                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                <form>
+                    <input type="email" placeholder="Email address">
+                    <button class="btn">GET STARTED ></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="info-container">
+        <div class="info">
+            <h1>Enjoy on your TV.</h1>
+            <h2>Watch on Smart TVs, Playstation, Xbox, Chromecast, 
+                Apple TV, Blu-ray players, and more.
+            </h2>
+        </div>
+        <div class="tv-container">
+            <div class="tv">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" 
+                    data-uia="our-story-card-img" alt="image link">
+            </div>
+            <div class="video">
+                <video autoplay playsinline muted loop>
+                    <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-container">
+        <div class="tv-container">
+            <div class="tv">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+                alt=""  data-uia="our-story-card-img">
+            </div>
+            <div class="video">
+                <video autoplay playsinline muted loop>
+                    <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="info">
+            <h1>Download your shows to watch offline.</h1>
+            <h2>Save your favorites easily and always have something to watch.
+            </h2>
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="col">
+            <ul>
+                <li>FAQ</li>
+                <li>Help Center</li> 
+                <li>Account</li>
+                <li>Media Center</li> 
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li>Investor Relations</li>
+                <li>Jobs</li>
+                <li>Redeem Gift Cards</li>
+                <li>Buy Gift Cards</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li>Ways to Watch</li>
+                <li>Terms of Use</li>
+                <li>Privacy</li>
+                <li>Cookie Preferences</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li>Corporate Information</li>
+                <li>Contact Us</li>
+                <li>Speed Test</li>
+                <li>Legal Notices</li>
+                <li>Netflix Originals</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <!-- use ./ to open file up quickly -->
+    <a href="./about-us.html">About Us</a>
+
+    <!--
+        VS CODE TRICKS
+        Ctrl + s to save
+        ! + Enter to get html doc setup
+        Alt + Click to get multiple cursors
+        Ctrl + / to comment out line of code
+    -->
+    <!-- HTML SELECTORS
+        - used to find or select the HTML element you want to stle
+        Types of Selectors:
+            - simple selectors: select based on name, id, class
+            - combination selectors: select elements based on specific relationships between them
+            - pseudo-class selectors: select elements based on a certain state
+            - pseudo-elemets selectors: select and style a part of an element
+            - attribute selectors: select based on attribute or attribute value
+     -->
+    <!-- THE FORM ELEMENT         
+        - An HTML form is used to collect user input
+        - The user input is most often sent to a server for processing
+        <form>
+            form elements
+        </form>
+    -->
+    <!-- THE INPUT ELEMENT          
+        - the HTML input element is the most used form element
+        - an input element can be displayed in many ways, depending on the type attribute
+        <input type="text">
+        other types: radio, checkbox, submit, button, email
+    -->
+    <!-- THE BUTTON ELEMENT          
+        - the button tag defines a clickable button
+        - inside a button element you can put text (and tags like i, strong, br, img, etc).
+        This is not possible with a button created with the input element
+        <button type="button">Click Me!</button.
+    -->
+    <!-- CSS BACKGROUNDS
+        background-color: specify color of background
+        opacity: specify opacity/transparency of an element
+        background-image: specify image to use as a background, default repeat
+        background-repeat: repeat-x, repeat-y, no-repeat
+        background-position: specify position of the background eg right top
+        shorthand:
+            background: bg-color bg-image bg-repeat bg-position
+     -->
+    <!-- CSS FLEXBOX PROPERTIES
+        - flex-direction: defines direction in which container wants to stack the flex items
+            row, column, row-reverse, column-reverse
+        - flex-wrap: specifies whether the flex items should wrap around the screen or not
+            wrap, nowrap, wrap-reverse
+        - flex-flow
+        - justify-content: used to align the flex items (horizontally)
+            flex-start, center, flex-end, space-around (space on both ends and between items), 
+            space-between (space between items, space only on 1 side of the items at the ends)
+        - align-items: used to align the flex items as well (vertically align items)
+            center, flex-start, flex-end, stretch, baseline
+        - align-content
+    -->
+    <!-- CSS ELEMENTS FLOW
+        Display, Span, Images, block, inline, inline-block, none
+        - Divs are display: block; by default
+            - block elements fill the parent container, and get stacked on top of one another
+        - Spans are display: inline; by default
+            - Will take minimal space in a div
+            - can't have a height and width of this
+        - Images are display: inline-block;
+            - Can set height and width
+            - Will be in same line
+        - With display: none; - component will simply disappear
+    -->
+    <!-- VIDEO ELEMENT
+        - The HTML <video> element is used to show a video on a web page
+        < video autoplay playsinline muted loop>
+            <zource src="...."
+            type="video/mp4">
+        </video>
+    -->
+    <!-- CSS POSITION PROPERTY
+        - All elements have a default position: static;
+            - Elements appear in order specified in element flow
+        - Position: relative;
+            - Position elements relative to its original position in the element flow
+            - This does not affect other elements in the flow
+            - Position: relative; allows you to disrupt the original flow and overlap elements
+            top: 100px; /*move 100px down from original position*/
+        - Position: absolute;
+            - This removes the elements from the normal flow
+            - The element will be positioned in relation to the first ancestor that is not static
+                or that it is not in the natural flow
+            - Can change position of parent to relative - it does not alter the position of element
+        - Position: fixed;
+            - Positioned relative to the browser window
+            - Normally used for nav bars and footers
+    -->
+    <!-- CSS Z-INDEX PROPERTY
+        - The z-index property specifies the stack order of an element
+        - An element with greater stack order is always in front of an element
+            with a lower stack order.
+        - z-index only works on positioned elements (absolute, relative, fixed, or sticky)
+        - Assume each element has a z-index of 0
+    -->
+    <!-- CSS ::AFTER SELECTOR
+        - Inserts something after the content of each selected elements.
+        - This is known as the Pseudo Selector
+        - Content property used to specify the content to insert
+        - Eg:
+            .banner-wrap::after {
+                height: 100%;
+                width: 100%;
+                content: '';
+                background: rgba(0,0,0,0.6);
+            }
+    -->
+    <!-- 
+
+    -->
+
+</body>
+
+<script>
+
+</script>
+</html>

@@ -1,0 +1,150 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    /* all font sizes in rem will be relative to the font size in the root element*/
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#header-title {
+    color: red;
+    background-color: white
+}
+
+.banner-wrap {
+    background: url(./assets/bgimage.jpg) 0 0 no-repeat;
+    /* fill entire div with picture */
+    background-size: cover;
+    background-position: center;
+    /* viewheight is relative to 1% of the browser's height */
+    height: 80vh;  
+    position: relative;
+    z-index: 1;
+}
+.banner-wrap::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: rgba(0,0,0,0.6);
+}
+
+.nav-bar {
+    display: flex;
+    padding-top: 20px;
+    margin: 0 56px; /*top and bottom margin, left and right margin*/
+    justify-content: space-between;
+    height: 55px;
+}
+
+.nav-bar .logo img{
+    /* only change the CSS of img in logo classes inside nav-bar classes */
+    height: 35px;
+}
+
+.nav-bar .btn {
+    color: white;
+    background-color: #e50914;
+    line-height: normal;
+    padding: 5px 17px; /* top and bottom, right and left */
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 3px;
+}
+
+.banner-container {
+    text-align: center;
+    color: white;
+    display: flex;   
+    flex-direction: column; /* put flex direction before justify and align */
+    justify-content: center;
+    align-items: center;
+    padding: 70px 45px;
+    height: calc(100% - 55px)
+}
+
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 16px 75px;
+}
+
+h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin: 16px 75px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.get-started {
+    padding-top: 0.85rem;   
+}
+.get-started form {
+    height: 60px;
+    display: flex;
+}
+.get-started input {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    border: none;
+    width: 450px;
+}
+.get-started .btn {
+    background-color: #e50914;
+    color: white;
+    width: 248px;
+    padding: 0px 26px;
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    font-size: 1.625rem;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 45px 70px;
+    border-top: solid rgb(34, 34, 34) 8px;
+    border-bottom: solid rgb(34, 34, 34) 8px;
+}
+.tv-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tv {
+    position: relative;
+    z-index: 1;
+}
+.video {
+    position: absolute;
+}
+
+.footer {
+    color: #222222;
+}
+.footer ul {
+    list-style-type: none;
+}
+.footer ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
